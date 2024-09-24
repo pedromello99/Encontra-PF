@@ -9,6 +9,14 @@ Este projeto realiza a análise de combinações de numerários enviados pela se
   
 ## Como usar
 
+### Extração de Valores do DEMCOMP (Demonstrativo de Compromisso)
+
+Os valores utilizados neste projeto para análise de combinações devem ser extraídos diretamente do **Demonstrativo de Compromisso (DEMCOMP)**, que é parte do sistema de acompanhamento financeiro do SIAFI. O **DEMCOMP** apresenta os compromissos orçamentários e financeiros que foram assumidos pela Unidade Gestora (UG), incluindo as despesas a serem pagas com base no orçamento autorizado.
+
+### Lançamentos na Aba Principal (PCO)
+
+Para realizar a análise correta, é essencial que os dados sejam provenientes dos lançamentos feitos na **Aba Principal com Orçamento (PCO)** dos **Documentos Hábeis(DH)**.
+
 ### Pré-requisitos
 
 - Python 3.x instalado em sua máquina.
