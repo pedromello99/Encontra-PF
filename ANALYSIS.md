@@ -1,15 +1,53 @@
-# Encontra-PF
+# Encontra-PF - Análise Detalhada
 
 ## 📋 Informações Gerais
-- **Criado em:** 24/09/2024
-- **Última atualização:** 24/09/2024
-- **Linguagem principal:** Python
-- **Licença:** MIT License
-- **Status:** 🔴 Inativo
-- **Commits:** ~4
-- **Contribuidores:** 1
+| Campo | Valor |
+|-------|-------|
+| **Repositório** | Encontra-PF |
+| **Tipo** | Projeto de Software |
+| **Visibilidade** | Privado 🔒 |
+
+---
 
 ## 🎯 Descrição do Projeto
+
+Este projeto realiza a análise de combinações de numerários enviados pela setorial contábil no SIAFI, útil para Unidades Gestoras (UG) identificarem possíveis somas de valores específicos. O projeto foi pensado para ser de fácil utilização por qualquer pessoa.
+
+---
+
+## 🛠️ Stack Tecnológica
+
+### Linguagens Detectadas
+- **Python**: 60.0% (3 arquivos)
+- **Markdown**: 40.0% (2 arquivos)
+
+
+### Frameworks e Bibliotecas
+- Nenhum framework específico detectado
+
+
+
+### Dependências (requirements.txt)
+- `itertools`
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+📄 ANALYSIS.md
+📁 data/
+📄 LICENSE
+📄 numerario_analysis.py
+📄 README.md
+📄 requirements.txt
+📁 tests/
+```
+
+---
+
+## 📖 README Original
+
 # SIAFI Numerário Analysis
 
 Este projeto realiza a análise de combinações de numerários enviados pela setorial contábil no SIAFI, útil para Unidades Gestoras (UG) identificarem possíveis somas de valores específicos. O projeto foi pensado para ser de fácil utilização por qualquer pessoa.
@@ -23,43 +61,73 @@ Este projeto realiza a análise de combinações de numerários enviados pela se
 
 ### Extração de Valores do DEMCOMP (Demonstrativo de Compromisso)
 
-Os val...
+Os valores utilizados neste projeto para análise de combinações devem ser extraídos diretamente do **Demonstrativo de Compromisso (DEMCOMP)**, que é parte do sistema de acompanhamento financeiro do SIAFI. O **DEMCOMP** apresenta os compromissos orçamentários e financeiros que foram assumidos pela Unidade Gestora (UG), incluindo as despesas a serem pagas com base no orçamento autorizado.
 
-**Tipo:** Projeto de Software
+### Lançamentos na Aba Principal (PCO)
 
-## 🛠️ Stack Tecnológica
+Para realizar a análise correta, é essencial que os dados sejam provenientes dos lançamentos feitos na **Aba Principal com Orçamento (PCO)** dos **Documentos Hábeis(DH)**.
 
-### Linguagens
-- Python: 100.0%
+### Pré-requisitos
 
-### Frameworks e Bibliotecas
-- Nenhum framework específico detectado
+- Python 3.x instalado em sua máquina.
 
-### Bibliotecas Principais
-- Nenhuma biblioteca principal detectada
+### Passo a passo
 
-### Ferramentas de Desenvolvimento
-- Ferramentas padrão
+1. Clone o repositório para sua máquina:
+   ```bash
+   git clone https://github.com/usuario/SIAFI-Numerario-Analysis.git
+   ```
+   
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Infraestrutura e DevOps
-- Não detectado
+3. Coloque seu arquivo CSV no diretório `data/`. O arquivo deve conter uma coluna com os valores para análise.
 
-## 🏗️ Arquitetura
-Estrutura padrão
+4. Execute o script principal:
+   ```bash
+   python numerario_analysis.py
+   ```
 
-## 📁 Estrutura do Projeto
+### Exemplo de entrada
+
+Arquivo CSV (`example_input.csv`):
+```csv
+82040.80
+64933.22
+16200.00
+8339.60
+3853.66
+50378.50
+14172.50
+319842.20
+2583.00
+5593.00
 ```
-📄 LICENSE
-📄 README.md
-📄 data
-📁 data/
-📄 numerario_analysis.py
-📄 requirements.txt
-📄 tests
-📁 tests/
+
+### Testes
+
+Há uma pasta `tests/` que contém um exemplo de teste unitário. Para rodar os testes, use `pytest`:
+```bash
+pytest
 ```
 
-## 📝 Notas Adicionais
-- URL: https://github.com/pedromello99/Encontra-PF
-- Clone: `git clone https://github.com/pedromello99/Encontra-PF.git`
-- Visibilidade: Público 🌐
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar *pull requests*.
+
+## Licença
+
+Este projeto está
+
+---
+
+## 🔗 Links
+
+- **Repositório**: https://github.com/pedromello99/Encontra-PF
+- **Clone**: `git clone https://github.com/pedromello99/Encontra-PF.git`
+
+---
+
+*Análise gerada automaticamente em 14/01/2026*
